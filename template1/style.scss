@@ -1,0 +1,324 @@
+$mainBlack: #111111;
+$mainColor2: #ce1b28;
+$fontColor0: #555555;
+$fontColor1: #444444;
+$fontColor2: white;
+$fontColor3: rgba(255, 255, 255, 0.5);
+.bg {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: url("img/bg.jpg");
+    background-position: fixed;
+    background-size: cover;
+    z-index: -2;
+}
+.bg_color {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    background-position: fixed;
+    background-size: cover;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.menu {
+    position: fixed;
+    height: 100vh;
+    width: 0px;
+    right: 0;
+    background: $mainBlack;
+    transition: 0.3s;
+    z-index: 5;
+    .menu_times {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 20px;
+        height: 45px;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+        color: $fontColor3;
+        transition: 0.3s;
+        .menu_times_x {
+            &:hover {
+                color: $fontColor2;
+                cursor: pointer;
+            }
+        }
+    }
+    .menu_ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: $fontColor2;
+        font-size: 16px;
+        box-sizing: border-box;
+        padding: 20px;
+        a {
+            padding: 12px;
+            color: $fontColor3;
+            transition: 0.3s;
+            &:hover {
+                color: $fontColor2;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+header {
+    position: fixed;
+    width: 100vw;
+    height: 45px;
+    background: $mainBlack;
+    z-index: 3;
+    .header {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header_logo {
+            color: $fontColor2;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header_list {
+            color: $fontColor3;
+            transition: 0.3s;
+            &:hover {
+                color: $fontColor2;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.main {
+    position: relative;
+    background: url("./img/banner.jpg");
+    background-size: cover;
+    .main_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right, $mainColor2, black);
+        filter: opacity(0.8);
+        z-index: 1;
+    }
+    .main_inner {
+        position: relative;
+        text-align: center;
+        padding: 200px;
+        z-index: 2;
+        .main_inner_title {
+            color: $fontColor2;
+            font-size: 64px;
+            margin-bottom: 16px;
+        }
+        .main_inner_content {
+            color: $fontColor3;
+            font-size: 24px;
+        }
+    }
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $fontColor1;
+    padding: 64px 0;
+    .article_inner {
+        text-align: center;
+        max-width: 750px;
+        .article_inner_title {
+            color: $fontColor0;
+            font-size: 36px;
+            margin-bottom: 24px;
+        }
+        .article_inner_content {
+            font-size: 16px;
+            margin-bottom: 32px;
+        }
+    }
+    .article_cardBox {
+        text-align: center;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .article_cardBox_infCard {
+            padding: 8px;
+            .infCard_padding {
+                background: $fontColor2;
+                box-sizing: border-box;
+                padding: 32px;
+                .infCard_img {
+                    margin-top: 32px;
+                    margin-bottom: 24px;
+                    i {
+                        font-size: 5rem;
+                        color: $mainColor2;
+                    }
+                }
+                .infCard_title {
+                    color: $fontColor0;
+                    font-size: 20px;
+                    margin-bottom: 24px;
+                }
+                .infCard_content {
+                    font-size: 16px;
+                    margin-bottom: 32px;
+                }
+            }
+        }
+        .article_cardBox_userCard {
+            padding: 8px;
+            .userCard_padding {
+                background: $fontColor2;
+                box-sizing: border-box;
+                padding: 32px;
+                .userCard_content {
+                    text-align: left;
+                    padding: 16px 24px;
+                    color: $fontColor1;
+                    font-size: 16px;
+                    font-style: italic;
+                    margin-bottom: 32px;
+                    border-left: 8px solid rgb(161, 161, 161);
+                }
+                .userCard_inf {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-size: 12px;
+                    .userCard_inf_img {
+                        height: 60px;
+                        width: 60px;
+                        margin-right: 24px;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .userCard_inf_name {
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 64px 32px;
+    overflow: hidden;
+    .wrapper_bg {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: -1;
+    }
+    .wrapper_bgColor {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background: black;
+        opacity: 0.3;
+        z-index: -1;
+    }
+    .wrapper_title {
+        color: $fontColor2;
+        font-size: 36px;
+    }
+    .wrapper_content {
+        color: $fontColor3;
+        font-size: 16px;
+        margin: 32px;
+    }
+}
+
+footer {
+    background: $mainBlack;
+    color: $fontColor3;
+    padding: 64px 32px;
+    .footer {
+        .footer_area1 {
+            box-sizing: border-box;
+            padding-right: 30px;
+            .area1_title {
+                color: $fontColor2;
+                margin-bottom: 24px;
+                font-size: 20px;
+            }
+            .area1_content {
+                margin-bottom: 32px;
+            }
+        }
+        .footer_area2 {
+            box-sizing: border-box;
+            padding: 0 25px;
+            .area2_title {
+                color: $fontColor2;
+                margin-bottom: 24px;
+            }
+            .area2_content {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 32px;
+                a {
+                    padding: 12px 0;
+                    color: $fontColor3;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    border-bottom: 1px solid rgb(161, 161, 161);
+                    &:last-child {
+                        border: none;
+                    }
+                    &:hover {
+                        color: $mainColor2;
+                    }
+                }
+            }
+            .area2_content2 {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 32px;
+                a {
+                    padding: 12px 0;
+                    color: $fontColor3;
+                    text-decoration: none;
+                    transition: 0.3s;
+                    i {
+                        width: 20px;
+                        margin-right: 20px;
+                        color: $fontColor2;
+                    }
+                    &:hover {
+                        color: $mainColor2;
+                    }
+                }
+            }
+        }
+    }
+}

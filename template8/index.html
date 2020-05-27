@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template8</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../reset.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- bootstrap font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerBg"></div>
+        <div class="header_inner">
+            <i class="headerBtn fa fa-home"></i>
+            <div class="header_inf">
+                <div class="title">
+                    <p>Radius</p>
+                </div>
+                <div class="content">
+                    <p>A fully responsive masonry-style</p>
+                    <p>portfolio template.</p>
+                </div>
+                <div class="button">
+                    <input class="letGo" type="button" value="Let's Go">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="picBx">
+        <div class="picBx_inner container-fluid">
+            <div class="row">
+                <!--第一層-->
+                <div class="col-6">
+                    <div class="row">
+                        <div class="picBx_areaType col-md-6 col-12">
+                            <div class="imgBx">
+                                <img src="img/pic01.jpg" alt="">
+                            </div>
+                            <div class="imgBx">
+                                <img src="img/pic02.jpg" alt="">
+                            </div>
+                            <div class="imgBx">
+                                <img src="img/pic03.jpg" alt="">
+                            </div>
+                            <div class="imgBx">
+                                <img src="img/pic04.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="picBx_areaType col-md-6 col-12">
+                            <div class="imgBx">
+                                <img src="img/pic06.jpg" alt="">
+                            </div>
+                            <div class="imgBx">
+                                <img src="img/pic05.jpg" alt="">
+                            </div>
+                            <div class="imgBx">
+                                <img src="img/pic08.jpg" alt="">
+                            </div>
+                            <div class="imgBx">
+                                <img src="img/pic07.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--第一層-->
+                <div class="col-6">
+                    <div class="row">
+                        <div class="picBx_areaType col-md-6 col-12">
+                            <div class="imgBx">
+                                <img src="img/pic09.jpg" alt="">
+                            </div>
+                            <div class="imgBx">
+                                <img src="img/pic12.jpg" alt="">
+                            </div>
+                            <div class="imgBx">
+                                <img src="img/pic11.jpg" alt="">
+                            </div>
+                            <div class="imgBx">
+                                <img src="img/pic10.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="picBx_areaType col-md-6 col-12">
+                            <div class="imgBx">
+                                <img src="img/pic13.jpg" alt="">
+                            </div>
+                            <div class="imgBx">
+                                <img src="img/pic14.jpg" alt="">
+                            </div>
+                            <div class="imgBx">
+                                <img src="img/pic15.jpg" alt="">
+                            </div>
+                            <div class="imgBx">
+                                <img src="img/pic16.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footerBtn">
+            <i class="fa fa-info-circle"></i>
+        </div>
+        <div class="footer_inner container-fluid">
+            <div class="row">
+                <div class="footer_inf col-md-6 col-12">
+                    <div class="title">
+                        <p>Vestibulum hendrerit tortor id gravida</p>
+                    </div>
+                    <div class="content">
+                        <p>In tempor porttitor nisl non elementum. Nulla ipsum ipsum, feugiat vitae vehicula vitae,
+                            imperdiet sed risus. Fusce sed dictum neque, id auctor felis. Praesent luctus sagittis
+                            viverra. Nulla erat nibh, fermentum quis enim ac, ultrices euismod augue. Proin ligula nibh,
+                            pretium at enim eget, tempor feugiat nulla.</p>
+                    </div>
+                </div>
+                <div class="footer_inf col-md-6 col-12">
+                    <div class="title">
+                        <p>Follow me</p>
+                    </div>
+                    <div class="logo">
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-dribbble"></i>
+                    </div>
+                    <hr>
+                    <p>© Untitled. Design: TEMPLATED. Images: Unsplash.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+
+        window.onload = function () {
+            // footer 動畫
+            let footerBtn = document.querySelector('.footerBtn');
+            footerBtn.addEventListener('click', function (e) {
+                let footer = document.querySelector('footer');
+
+                if (footer.style.transform === '') {
+                    footer.style.transform = "translateY(0%)";
+                } else {
+                    footer.style.transform = "";
+                }
+            });
+
+            //header 動畫
+            let header = document.getElementsByTagName("header");
+            let headerBtn = document.getElementsByClassName("headerBtn");
+            let letGo = document.getElementsByClassName("letGo");
+            let headerBg = document.getElementsByClassName("headerBg");
+            let header_inner = document.getElementsByClassName("header_inner");
+            let header_inf = document.getElementsByClassName("header_inf");
+
+            headerBtn[0].addEventListener('click', () => {
+                if (headerBtn[0].style.display != "none") {
+                    headerBtn[0].style.display = "none";
+                    headerBg[0].style.background = "rgba(255,255,255,0.7)";
+                    header_inner[0].style.width = "500px";
+                    header_inner[0].style.height = "500px";
+                    header_inf[0].style.display = "flex";
+                    header_inner[0].style.top = "50%";
+                    header[0].style.height = "100%";
+                }
+            })
+            letGo[0].addEventListener("click", () => {
+                headerBtn[0].style.display = "block";
+                headerBg[0].style.background = "rgba(255,255,255,0)";
+                header_inner[0].style.width = "130px";
+                header_inner[0].style.height = "130px";
+                header_inf[0].style.display = "none";
+                // header_inner[0].style.transform = "translateY(100%)";
+                setTimeout(function () {
+                    header_inner[0].style.top = "0%";
+                }, 500);
+                setTimeout(function () {
+                    header[0].style.height = "0";
+                }, 900);
+            })
+        };
+
+    </script>
+</body>
+
+</html>

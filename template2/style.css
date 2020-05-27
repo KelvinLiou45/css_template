@@ -1,0 +1,216 @@
+.bg {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: url("img/bg.jpg");
+  background-size: cover;
+  z-index: -1; }
+
+.showPic {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s; }
+  .showPic .showPic_inner {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 5px solid white; }
+    .showPic .showPic_inner .showPic_inner_pic {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; }
+      .showPic .showPic_inner .showPic_inner_pic img {
+        height: 100%; }
+    .showPic .showPic_inner .showPic_inner_times {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      width: 30px;
+      top: -15px;
+      right: -15px;
+      border-radius: 50%;
+      background: #1e1f23;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s; }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px; }
+  header .header_inner {
+    text-align: center; }
+    header .header_inner .header_inner_title {
+      font-size: 64px;
+      color: white;
+      font-weight: 600; }
+    header .header_inner .header_inner_secTitle {
+      color: rgba(255, 255, 255, 0.5);
+      margin-top: -15px; }
+
+article {
+  margin: 32px; }
+  article .article_tellUs {
+    background: #f4f4f4; }
+    article .article_tellUs .article_tellUs_img {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; }
+      article .article_tellUs .article_tellUs_img img {
+        width: 110%; }
+    article .article_tellUs .article_tellUs_title {
+      padding: 48px 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: white; }
+      article .article_tellUs .article_tellUs_title h1 {
+        font-size: 28px;
+        color: #1e1f23;
+        margin-bottom: 16px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #bbbbbb; }
+      article .article_tellUs .article_tellUs_title p {
+        color: #bbbbbb;
+        font-size: 13px;
+        margin-bottom: 0; }
+    article .article_tellUs .article_tellUs_content {
+      padding: 50px;
+      box-sizing: border; }
+      article .article_tellUs .article_tellUs_content p:nth-child(1) {
+        color: rgba(0, 0, 0, 0.65);
+        margin-bottom: 32px; }
+      article .article_tellUs .article_tellUs_content p:nth-child(2) {
+        color: rgba(0, 0, 0, 0.65);
+        margin-bottom: 0; }
+  article .article_vestibulum {
+    background: #1e1f23;
+    padding: 60px;
+    box-sizing: border-box; }
+    article .article_vestibulum .article_vestibulum_title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: black;
+      padding: 30px;
+      box-sizing: border-box; }
+      article .article_vestibulum .article_vestibulum_title h1 {
+        font-size: 28px;
+        color: white;
+        margin-bottom: 16px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #bbbbbb; }
+      article .article_vestibulum .article_vestibulum_title p {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 13px;
+        margin-bottom: 0; }
+    article .article_vestibulum .article_vestibulum_img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      padding: 0;
+      cursor: pointer; }
+      article .article_vestibulum .article_vestibulum_img img {
+        width: 110%; }
+  article .article_user #show2 {
+    display: none; }
+  article .article_user #show1 {
+    display: block; }
+  article .article_user .article_user_img {
+    overflow: hidden;
+    padding: 0px; }
+    article .article_user .article_user_img img {
+      width: 110%; }
+  article .article_user .article_user_content {
+    padding: 60px;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    article .article_user .article_user_content .article_user_content_title {
+      color: #1e1f23;
+      font-size: 20px;
+      margin-bottom: 15px;
+      font-weight: 600; }
+    article .article_user .article_user_content .article_user_content_content {
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 15px; }
+  article .article_user .article_user_content2 {
+    padding: 60px;
+    background: #1e1f23;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end; }
+    article .article_user .article_user_content2 .article_user_content_title {
+      color: white;
+      font-size: 20px;
+      margin-bottom: 15px;
+      font-weight: 600; }
+    article .article_user .article_user_content2 .article_user_content_content {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 15px;
+      text-align: right; }
+
+footer {
+  margin-top: 80px;
+  margin-bottom: 32px; }
+  footer .footer_inner .footer_inner_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 48px; }
+    footer .footer_inner .footer_inner_logo i {
+      padding: 0 15px; }
+    footer .footer_inner .footer_inner_logo :hover {
+      color: white;
+      cursor: pointer; }
+  footer .footer_inner .footer_inner_untitled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5); }
+
+@media screen and (max-width: 991px) {
+  article .article_user #show2 {
+    display: block; }
+  article .article_user #show1 {
+    display: none; }
+  article .article_user .article_user_content {
+    align-items: center; }
+    article .article_user .article_user_content .article_user_content_content {
+      text-align: center; }
+  article .article_user .article_user_content2 {
+    align-items: center; }
+    article .article_user .article_user_content2 .article_user_content_content {
+      text-align: center; } }
+
+/*# sourceMappingURL=style.css.map */

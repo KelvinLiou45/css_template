@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template3</title>
+    <!-- resetCss -->
+    <link rel="stylesheet" href="../reset.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- bootstrap font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg"><img src="img/slide02.jpg" alt=""></div>
+
+    <div class="menu">
+        <div class="menu_times">
+            <i class=" menu_times_x fa fa-times"></i>
+        </div>
+        <div class="menu_ul">
+            <a href="#">Home</a>
+            <a href="#">Elements</a>
+            <a href="#">Generic</a>
+        </div>
+    </div>
+    <header>
+        <div class="header container">
+            <div class="header_logo">
+                Hielo by TEMPLATED
+            </div>
+            <div class="header_list">
+                <i class="fa fa-align-justify"></i> Menu
+            </div>
+        </div>
+    </header>
+   
+    <article>
+        <div class="slides container-fuild">
+            <div class="row">
+                <div class="slides_inf col-sm-12" id="slide1">
+                    <p>A free responsive web site template by TEMPLATED</p>
+                    <h1>Hielo</h1>
+                    <img src="img/slide01.jpg" alt="">
+                    <div class="slide_bg"></div>
+                </div>
+                <div class="slides_inf col-sm-12" id="slide2">
+                    <p>Lorem ipsum dolor sit amet nullam feugiat</p>
+                    <h1>Magna etiam</h1>
+                    <img src="img/slide02.jpg" alt="">
+                </div>
+                <div class="slides_inf col-sm-12" id="slide3">
+                    <p>Sed cursus aliuam veroeros lorem ipsum nullam</p>
+                    <h1>Tempus dolor</h1>
+                    <img src="img/slide03.jpg" alt="">
+                </div>
+                <div class="slides_inf col-sm-12" id="slide4">
+                    <p>Adipiscing lorem ipsum feugiat sed phasellus consequat</p>
+                    <h1>Etiam feugiat</h1>
+                    <img src="img/slide04.jpg" alt="">
+                </div>
+                <div class="slides_inf col-sm-12" id="slide5">
+                    <p>Ipsum dolor sed magna veroeros lorem ipsum</p>
+                    <h1>Lorem adipiscing</h1>
+                    <img src="img/slide05.jpg" alt="">
+                </div>
+                <div class="slides_choice">
+                    <div class="slides_choice_circle" onclick="changeSlide(0)"></div>
+                    <div class="slides_choice_circle" onclick="changeSlide(1)"></div>
+                    <div class="slides_choice_circle" onclick="changeSlide(2)"></div>
+                    <div class="slides_choice_circle" onclick="changeSlide(3)"></div>
+                    <div class="slides_choice_circle" onclick="changeSlide(4)"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article>
+        <div class="article container">
+            <div class="row">
+                <div class="article_square col-lg-6 col-sm-12">
+                    <div class="article_square_inf">
+                        <div class="imgBx">
+                            <img src="img/pic02.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <p>MAECENAS SAPIEN FEUGIAT EX PURUS</p>
+                                <h1>Lorem ipsum dolor</h1>
+                            </div>
+                            <div class="content">
+                                Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit
+                                amet
+                                tortor
+                                velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis
+                                volutpat
+                                lacus placerat malesuada.
+                            </div>
+                            <div class="button">
+                                <input type="button" value="LEARN MORE">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="article_square col-lg-6 col-sm-12">
+                    <div class="article_square_inf">
+                        <div class="imgBx">
+                            <img src="img/pic03.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="title">
+                                <p>MATTIS ELEMENTUM SAPIEN PRETIUM TELLUS</p>
+                                <h1>Vestibulum sit amet</h1>
+                            </div>
+                            <div class="content">
+                                Cras aliquet urna ut sapien tincidunt, quis malesuada elit facilisis. Vestibulum sit
+                                amet
+                                tortor
+                                velit. Nam elementum nibh a libero pharetra elementum. Maecenas feugiat ex purus, quis
+                                volutpat
+                                lacus placerat malesuada.
+                            </div>
+                            <div class="button">
+                                <input type="button" value="LEARN MORE">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <div class="wrapper">
+        <div class="wrapper_inner container_fuild">
+            <p>NAM VEL ANTE SIT AMET LIBERO SCELERISQUE FACILISIS ELEIFEND VITAE URNA</p>
+            <h1>Morbi maximus justo</h1>
+        </div>
+    </div>
+
+    <article>
+        <div class="article container">
+            <div class="row">
+                <div class="article_title col-sm-12">
+                    <p>NAM VEL ANTE SIT AMET LIBERO SCELERISQUE FACILISIS ELEIFEND VITAE URNA</p>
+                    <h1>Morbi maximus justo</h1>
+                </div>
+                <div class="article_squareImg col-lg-6">
+                    <img src="img/pic01.jpg" alt="">
+                </div>
+                <div class="article_squareImg col-lg-6">
+                    <img src="img/pic02.jpg" alt="">
+                </div>
+                <div class="article_squareImg col-lg-6">
+                    <img src="img/pic03.jpg" alt="">
+                </div>
+                <div class="article_squareImg col-lg-6">
+                    <img src="img/pic04.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <div class="footer_inner">
+            <div class="footer_inner_logo">
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-envelope-o"></i>
+            </div>
+            <div class="footer_inner_inf">
+                © Untitled. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // header and menu
+        let menuBtn = document.getElementsByClassName('header_list');
+        let menuTimes = document.getElementsByClassName('menu_times_x');
+        let menu = document.getElementsByClassName('menu');
+        menuBtn[0].addEventListener('click', () => {
+            menu[0].style.width = '250px';
+        })
+        menuTimes[0].addEventListener('click', () => {
+            menu[0].style.width = '0px';
+        })
+
+        // header absolute to fixed
+        let header = document.getElementsByTagName('header');
+        window.addEventListener('scroll',()=>{
+            if(window.scrollY > 100 & window.scrollY < 250){
+                header[0].style.transform='translateY(-45px)';
+            }
+            else if(window.scrollY >= 250){
+                header[0].style.position='fixed';
+                header[0].style.background = "black";
+                header[0].style.transform='translateY(0px)';
+            }
+            else{
+                header[0].style.position='absolute';
+                header[0].style.background = "none";
+                header[0].style.transform='translateY(0px)';
+            }
+        })
+
+
+        // circle animal
+        let slides_inf = document.getElementsByClassName('slides_inf');
+        function changeSlide(num){
+            console.log(num);
+            for(let i=0;i<slides_inf.length;i++){
+                slides_inf[i].style.display='none';
+            }
+            // console.log(slides_inf[num]);
+            slides_inf[num].style.display = "flex";
+        }
+    </script>
+</body>
+
+</html>

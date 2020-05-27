@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template5</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../reset.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- bootstrap font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg"></div>
+
+    <div class="showPic">
+        <div class="showPic_inner">
+            <div class="showPic_picBx">
+                <img id="showPic_pic" src="img/01.jpg" alt="">
+                <p>This right here is a caption.</p>
+                <div class="times"><i class="fa fa-times"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <i class="fa fa-home active"></i>
+        <i class="fa fa-camera-retro"></i>
+        <i class="fa fa-file-text-o"></i>
+    </nav>
+
+    <div class="page">
+        <header>
+            <div class="header_inner container">
+                <div class="row">
+                    <div class="header_inner_titleMain">
+                        Hey, I'm Snapshot
+                    </div>
+                    <div class="header_inner_titleSec">
+                        A fully responsive gallery template by TEMPLATED
+                    </div>
+                    <div class="header_inner_button">
+                        <input type="button" value="Continue">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <article>
+            <div class="article_inner container">
+                <div class="article_inner_title">
+                    What's New
+                </div>
+                <div class="article_inner_picBx row">
+                    <!-- 1 5 9 2 6 10 3 7  -->
+                    <div class="picBx_pic col-lg-3 col-sm-6">
+                        <img src="img/01.jpg" alt="">
+                    </div>
+                    <div class="picBx_pic col-lg-3 col-sm-6">
+                        <img src="img/05.jpg" alt="">
+                    </div>
+                    <div class="picBx_pic col-lg-3 col-sm-6">
+                        <img src="img/09.jpg" alt="">
+                    </div>
+                    <div class="picBx_pic col-lg-3 col-sm-6">
+                        <img src="img/02.jpg" alt="">
+                    </div>
+                    <div class="picBx_pic col-lg-3 col-sm-6">
+                        <img src="img/06.jpg" alt="">
+                    </div>
+                    <div class="picBx_pic col-lg-3 col-sm-6">
+                        <img src="img/10.jpg" alt="">
+                    </div>
+                    <div class="picBx_pic col-lg-3 col-sm-6">
+                        <img src="img/03.jpg" alt="">
+                    </div>
+                    <div class="picBx_pic col-lg-3 col-sm-6">
+                        <img src="img/07.jpg" alt="">
+                    </div>
+                </div>
+                <div class="article_inner_button">
+                    <input type="button" value="Full Gallery">
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="article_inner container-fluid">
+                <div class="row">
+                    <div class="aboutMe col-lg-6 col-sm-12">
+                        <h1>About Me</h1>
+                        <p>
+                            Mus sed interdum nunc dictum rutrum scelerisque erat a parturient condimentum potenti
+                            dapibus
+                            vestibulum condimentum per tristique porta. Torquent a ut consectetur a vel ullamcorper a
+                            commodo a mattis ipsum class quam sed eros vestibulum quisque a eu nulla scelerisque a
+                            elementum
+                            vestibulum.
+                        </p>
+                        <p>
+                            Aliquet dolor ultricies sem rhoncus dolor ullamcorper pharetra dis condimentum ullamcorper
+                            rutrum vehicula id nisi vel aptent orci litora hendrerit penatibus erat ad sit. In a semper
+                            velit eleifend a viverra adipiscing a phasellus urna praesent parturient integer ultrices
+                            montes
+                            parturient suscipit posuere quis aenean. Parturient euismod ultricies commodo arcu elementum
+                            suspendisse id dictumst at ut vestibulum conubia quisque a himenaeos dictum proin dis purus
+                            integer mollis parturient eros scelerisque dis libero parturient magnis.
+                        </p>
+                        <h1>
+                            Follow Me
+                        </h1>
+                        <div class="logo">
+                            <i class="fa fa-twitter"></i>
+                            <i class="fa fa-facebook"></i>
+                            <i class="fa fa-instagram"></i>
+                        </div>
+                    </div>
+                    <div class="getInTouch col-lg-6 col-sm-12">
+                        <h1>Get in Touch</h1>
+                        <div class="container-fuild">
+                            <div class="row">
+                                <div class="name col-lg-6 col-sm-12">
+                                    <p>Name</p>
+                                    <input type="text" placeholder="Name">
+                                </div>
+                                <div class="email col-lg-6 col-sm-12">
+                                    <p>Email</p>
+                                    <input type="text" placeholder="Email">
+                                </div>
+                                <div class="message col-sm-12">
+                                    <p>Message</p>
+                                    <textarea name="" id="" cols="30" rows="7" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="button" value="Send Message">
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <footer>
+            © Untitled Design: TEMPLATED. Images: Unsplash.
+        </footer>
+    </div>
+
+
+    <script>
+        let showPic = document.getElementsByClassName('showPic');
+        let showPic_inner = document.getElementsByClassName('showPic_inner');
+        let showPic_picBx = document.getElementsByClassName('showPic_picBx');
+        let showPic_pic = document.getElementById('showPic_pic');
+
+        // 按圖顯示動畫
+        let picBx_pic = document.getElementsByClassName('picBx_pic');
+        for (let i = 0; i < picBx_pic.length; i++) {
+            picBx_pic[i].addEventListener('click', () => {
+                //background animation
+                showPic[0].style.background = "rgba(0, 0, 0, 0.7)";
+                showPic[0].style.opacity = "1";
+                showPic[0].style.pointerEvents = "auto";
+                //picBx animation
+                showPic_picBx[0].style.height = "350px";
+                showPic_picBx[0].style.width = "500px";
+                //pic src change
+                showPic_pic.src = picBx_pic[i].childNodes[1].src;
+            })
+        }
+
+        // X按鈕
+        let times = document.getElementsByClassName('times');
+        times[0].addEventListener('click', () => {
+            showPic[0].style.background = "rgba(0, 0, 0, 0)";
+            showPic[0].style.opacity = "0";
+            showPic[0].style.pointerEvents = "none";
+
+            //picBx animation
+            showPic_picBx[0].style.height = "0px";
+            showPic_picBx[0].style.width = "0px";
+        });
+        showPic_inner[0].addEventListener('click', () => {
+            showPic[0].style.background = "rgba(0, 0, 0, 0)";
+            showPic[0].style.opacity = "0";
+            showPic[0].style.pointerEvents = "none";
+
+            //picBx animation
+            showPic_picBx[0].style.height = "0px";
+            showPic_picBx[0].style.width = "0px";
+        });
+    </script>
+</body>
+
+</html>
