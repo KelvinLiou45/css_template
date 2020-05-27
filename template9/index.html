@@ -101,8 +101,16 @@
                 <p class="left">Fusce fringilla enim sit amet lectus sollicitudin, eu tincidunt odio semper.</p>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-4 col-sm-12">
-
+                <div class="article_buttons col-lg-3 col-md-4 col-sm-12">
+                    <div class="article_button">
+                        <input type="button" class="buttonSix active" value="Duis vestibulum tellus">
+                    </div>
+                    <div class="article_button">
+                        <input type="button" class="buttonSix" value="Quam tempus sodales ipsum">
+                    </div>
+                    <div class="article_button">
+                        <input type="button" class="buttonSix" value="Donec faucibus risus cursus">
+                    </div>
                 </div>
                 <div class="col-lg-9 col-md-8 col-sm-12">
                     <div class="row">
@@ -110,7 +118,7 @@
                             <div class="square_inner">
                                 <div class="square_img">
                                     <div class="imgBx">
-                                        <img src="img/pic01.jpg" alt="">
+                                        <img class="imgSix" src="img/pic01.jpg" alt="">
                                     </div>
                                     <i class="fa fa-play"></i>
                                 </div>
@@ -120,7 +128,7 @@
                             <div class="square_inner">
                                 <div class="square_img">
                                     <div class="imgBx">
-                                        <img src="img/pic02.jpg" alt="">
+                                        <img class="imgSix" src="img/pic02.jpg" alt="">
                                     </div>
                                     <i class="fa fa-play"></i>
                                 </div>
@@ -130,7 +138,7 @@
                             <div class="square_inner">
                                 <div class="square_img">
                                     <div class="imgBx">
-                                        <img src="img/pic03.jpg" alt="">
+                                        <img class="imgSix" src="img/pic03.jpg" alt="">
                                     </div>
                                     <i class="fa fa-play"></i>
                                 </div>
@@ -140,7 +148,7 @@
                             <div class="square_inner">
                                 <div class="square_img">
                                     <div class="imgBx">
-                                        <img src="img/pic04.jpg" alt="">
+                                        <img class="imgSix" src="img/pic04.jpg" alt="">
                                     </div>
                                     <i class="fa fa-play"></i>
                                 </div>
@@ -150,7 +158,7 @@
                             <div class="square_inner">
                                 <div class="square_img">
                                     <div class="imgBx">
-                                        <img src="img/pic05.jpg" alt="">
+                                        <img class="imgSix" src="img/pic05.jpg" alt="">
                                     </div>
                                     <i class="fa fa-play"></i>
                                 </div>
@@ -160,7 +168,7 @@
                             <div class="square_inner">
                                 <div class="square_img">
                                     <div class="imgBx">
-                                        <img src="img/pic06.jpg" alt="">
+                                        <img class="imgSix" src="img/pic06.jpg" alt="">
                                     </div>
                                     <i class="fa fa-play"></i>
                                 </div>
@@ -229,6 +237,38 @@
             </div>
         </div>
     </article>
+
+    <script>
+        let buttonSix = document.getElementsByClassName("buttonSix");
+        let imgSix = document.getElementsByClassName("imgSix");
+
+        for(let i=0;i<buttonSix.length;i++){
+            buttonSix[i].addEventListener('click',()=>{
+                console.log(i);
+                buttonSix[i].classList.add('active');
+                for(let j=0;j<buttonSix.length;j++){
+                    if(j!=i){
+                        buttonSix[j].classList.remove('active');
+                    }
+                }
+                if(i === 0){
+                    imgSixSetting(["pic01","pic02","pic03","pic04","pic05","pic06"])
+                }
+                if(i === 1){
+                    imgSixSetting(["pic06","pic05","pic04","pic03","pic02","pic01"])
+                }
+                if(i === 2){
+                    imgSixSetting(["pic03","pic02","pic01","pic06","pic05","pic04"])
+                }
+            })
+        }
+
+        function imgSixSetting(arg){
+            for(let i=0;i<imgSix.length;i++){
+                imgSix[i].src = "img/"+arg[i]+".jpg";
+            }
+        }
+    </script>
 </body>
 
 </html>

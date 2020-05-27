@@ -98,7 +98,8 @@ article {
       article .article_inner .content .left {
         text-align: left; }
     article .article_inner .square {
-      padding: 15px; }
+      padding: 15px;
+      cursor: pointer; }
       article .article_inner .square .square_inner {
         background: #2a3d42;
         border-radius: 5px;
@@ -137,5 +138,22 @@ article {
           padding: 28px; }
           article .article_inner .square .square_inner .square_content p {
             margin: 0; }
+    article .article_inner .article_buttons {
+      padding: 15px; }
+      article .article_inner .article_buttons .article_button .buttonSix {
+        margin-bottom: 5px;
+        text-align: left;
+        padding: 10px 10px;
+        width: 100%;
+        font-size: 16px;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        background: rgba(0, 0, 0, 0.3);
+        outline: none; }
+        article .article_inner .article_buttons .article_button .buttonSix:hover {
+          background: #693dcc; }
+      article .article_inner .article_buttons .article_button .active {
+        background: #aa14cc; }
 
 /*# sourceMappingURL=style.css.map */
