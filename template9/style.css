@@ -1,0 +1,141 @@
+body {
+  overflow-x: hidden; }
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 45px;
+  z-index: 2; }
+  header .header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white; }
+    header .header_inner .header_logo {
+      padding-left: 20px; }
+      header .header_inner .header_logo p {
+        margin: 0; }
+    header .header_inner .header_menu {
+      display: flex;
+      padding-right: 40px; }
+      header .header_inner .header_menu i,
+      header .header_inner .header_menu p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0; }
+      header .header_inner .header_menu p {
+        padding-left: 5px; }
+
+.banner {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; }
+  .banner .bannerBg {
+    position: absolute; }
+    .banner .bannerBg .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100vw;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1; }
+    .banner .bannerBg img {
+      width: 100vw; }
+  .banner .banner_inner {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 780px;
+    z-index: 1; }
+    .banner .banner_inner .title {
+      color: white;
+      font-size: 64px; }
+    .banner .banner_inner .content {
+      font-size: 24px; }
+    .banner .banner_inner .button {
+      margin-top: 50px; }
+      .banner .banner_inner .button input[type="button"] {
+        font-size: 21px;
+        padding: 10px 20px;
+        color: white;
+        border-radius: 5px;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        background: none; }
+
+.bgA {
+  background: #24313e; }
+
+article {
+  margin: 0;
+  padding: 0;
+  background: #233643;
+  color: #9ba6af;
+  width: 100vw;
+  font-size: 18px; }
+  article .article_inner {
+    max-width: 1000px;
+    padding: 100px 20px; }
+    article .article_inner .title {
+      text-align: center;
+      color: white;
+      font-size: 36px;
+      font-weight: 600; }
+      article .article_inner .title .left {
+        text-align: left; }
+    article .article_inner .content {
+      text-align: center;
+      margin-bottom: 60px; }
+      article .article_inner .content .left {
+        text-align: left; }
+    article .article_inner .square {
+      padding: 15px; }
+      article .article_inner .square .square_inner {
+        background: #2a3d42;
+        border-radius: 5px;
+        overflow: hidden; }
+        article .article_inner .square .square_inner:hover .square_img .imgBx img {
+          transform: scale(1.1); }
+        article .article_inner .square .square_inner:hover .square_img i {
+          position: absolute;
+          color: white;
+          z-index: 1;
+          font-size: 50px; }
+        article .article_inner .square .square_inner .square_img {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%; }
+          article .article_inner .square .square_inner .square_img .imgBx {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-sizing: border-box; }
+            article .article_inner .square .square_inner .square_img .imgBx img {
+              width: 100%;
+              transition: 0.5s; }
+          article .article_inner .square .square_inner .square_img i {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.5);
+            z-index: 1;
+            font-size: 50px;
+            transition: 1s; }
+        article .article_inner .square .square_inner .square_content {
+          padding: 28px; }
+          article .article_inner .square .square_inner .square_content p {
+            margin: 0; }
+
+/*# sourceMappingURL=style.css.map */
