@@ -1,0 +1,110 @@
+body {
+    background: url("img/bg.jpg");
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+@mixin displayFlex($dir: row, $jus: center, $ali: center) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $ali;
+}
+
+header {
+    @include displayFlex();
+    width: 100vw;
+    font-size: 24px;
+    padding: 64px 0 32px;
+    .header_inner {
+        @include displayFlex(column);
+        text-align: center;
+        max-width: 800px;
+        .header_photo {
+            margin-bottom: 32px;
+            .photoBx {
+                img {
+                    padding: 9px;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 50%;
+                    border: 1px solid rgba(255, 255, 255, 0.65);
+                }
+            }
+        }
+        .header_content {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+        .header_logo {
+            @include displayFlex();
+            font-size: 20px;
+            margin-bottom: 32px;
+            i {
+                @include displayFlex();
+                border: 1px solid rgba(255, 255, 255, 0.65);
+                margin: 0 8px;
+                height: 45px;
+                width: 45px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 50%;
+                color: rgba(255, 255, 255, 0.65);
+                transition: 0.3s;
+                &:hover {
+                    cursor: pointer;
+                    background: rgba(255, 255, 255, 0.4);
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.photoBx {
+    margin-bottom: 32px;
+    .photoBx_inner {
+        .photoBx_imgs {
+            .photoBx_img {
+                transition: 0.3s;
+                cursor: pointer;
+                img {
+                    width: 100%;
+                    border-radius: 5px 5px 0 0;
+                }
+                p {
+                    box-sizing: border-box;
+                    padding: 15px 0;
+                    text-align: center;
+                    color: white;
+                    border: 1px solid rgba(255, 255, 255, 0.4);
+                    border-top: none;
+                    background: rgba(255, 255, 255, 0.1);
+                    border-radius: 0 0 5px 5px;
+                    transition: 0.3s;
+                }
+                &:hover {
+                    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+                    p {
+                        background: rgba(255, 255, 255, 0.4);
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    padding: 32px 0;
+    .footer_inner {
+        @include displayFlex(column);
+        .line {
+            width: 200px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.65);
+        }
+        p {
+            color: rgba(255, 255, 255, 0.65);
+            margin: 40px 0 32px;
+        }
+    }
+}
